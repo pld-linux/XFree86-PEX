@@ -13,8 +13,9 @@ Group:		X11/Libraries
 # xc/doc/hardcopy/PEX5
 Source0:	%{name}-%{version}.tar.bz2
 # Source0-md5:	bbfef5d0e822f033aa621ead56020bc8
+Patch0:		%{name}-miscstruct.patch
 URL:		http://www.xfree86.org/
-BuildRequires:	XFree86-Xserver-devel >= 4.3.0
+BuildRequires:	XFree86-Xserver-devel > 4.3.99.902-0.1
 BuildRequires:	XFree86-devel >= 4.3.0
 Requires:	XFree86-libs >= 4.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -68,7 +69,7 @@ Dokumentacja do rozszerzenia PEX.
 Summary:	PEX extension module
 Summary(pl):	Modu³ rozszerzenia PEX
 Group:		X11/XFree86
-Requires:	XFree86-modules >= 4.3.0
+%{requires_eq_to XFree86-modules XFree86-Xserver-devel}
 
 %description -n XFree86-module-PEX
 PEX extension module for X server.
@@ -89,6 +90,7 @@ Fonty PEX do rozszerzenia PEX.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 cd xc/lib/PEX5
@@ -115,10 +117,12 @@ imake -DUseInstalled -I/usr/X11R6/lib/X11/config \
 cd -
 done
 %{__make} depend \
+	TOP=/usr/X11R6/include/X11/Xserver \
 	EXTRA_INCLUDES="-I/usr/X11R6/include/X11/Xserver -I/usr/X11R6/include/X11"
 
 %{__make} \
-	CDEBUGFLAGS="%{rpmcflags} -I/usr/X11R6/include/X11/Xserver -I/usr/X11R6/include/X11"
+	TOP=/usr/X11R6/include/X11/Xserver \
+	CDEBUGFLAGS="%{rpmcflags} -I/usr/X11R6/include/X11"
 
 cd ../../../fonts/PEX
 xmkmf
