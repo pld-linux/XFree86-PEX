@@ -1,0 +1,20 @@
+--- XFree86-PEX-4.3.0/xc/programs/Xserver/PEX5/ddpex/mi/level2/miNurbs.c.orig	2001-12-14 20:57:29.000000000 +0100
++++ XFree86-PEX-4.3.0/xc/programs/Xserver/PEX5/ddpex/mi/level2/miNurbs.c	2003-12-27 01:24:51.584181440 +0100
+@@ -50,6 +50,7 @@
+ 
+ #include "X.h"
+ #include "misc.h"
++#include "regionstr.h"
+ #include "miscstruct.h"
+ #include "PEXErr.h"
+ #include "PEXproto.h"
+--- XFree86-PEX-4.3.0/xc/programs/Xserver/PEX5/ddpex/mi/level2/miTriStrip.c.orig	2001-12-14 20:57:30.000000000 +0100
++++ XFree86-PEX-4.3.0/xc/programs/Xserver/PEX5/ddpex/mi/level2/miTriStrip.c	2003-12-27 01:25:45.196031200 +0100
+@@ -50,6 +50,7 @@
+ 
+ #include "miClip.h"
+ #include "misc.h"
++#include "regionstr.h"
+ #include "miscstruct.h"
+ #include "ddpex3.h"
+ #include "PEXErr.h"
