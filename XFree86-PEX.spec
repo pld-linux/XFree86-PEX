@@ -12,6 +12,7 @@ Group:		X11/Libraries
 # xc/doc/specs/PEX5
 # xc/doc/hardcopy/PEX5
 Source0:	%{name}-%{version}.tar.bz2
+# Source0-md5:	bbfef5d0e822f033aa621ead56020bc8
 URL:		http://www.xfree86.org/
 BuildRequires:	XFree86-Xserver-devel >= 4.3.0
 BuildRequires:	XFree86-devel >= 4.3.0
