@@ -33,7 +33,7 @@ Biblioteka rozszerzenia PEX.
 Summary:	PEX extension headers
 Summary(pl):	Pliki nag³ówkowe rozszerzenia PEX
 Group:		X11/Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	XFree86-devel >= 4.3.0
 
 %description devel
@@ -46,7 +46,7 @@ Pliki nag³ówkowe rozszerzenia PEX.
 Summary:	PEX extension static library
 Summary(pl):	Statyczna biblioteka rozszerzenia PEX
 Group:		X11/Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 PEX extension static library.
@@ -57,7 +57,7 @@ Statyczna biblioteka rozszerzenia PEX.
 %package doc
 Summary:	PEX extension documentation
 Summary(pl):	Dokumentacja do rozszerzenia PEX
-Group:		X11/XFree86
+Group:		X11
 
 %description doc
 PEX extension documentation.
@@ -68,7 +68,7 @@ Dokumentacja do rozszerzenia PEX.
 %package -n XFree86-module-PEX
 Summary:	PEX extension module
 Summary(pl):	Modu³ rozszerzenia PEX
-Group:		X11/XFree86
+Group:		X11
 %{requires_eq_to XFree86-modules XFree86-Xserver-devel}
 
 %description -n XFree86-module-PEX
@@ -80,7 +80,7 @@ Modu³ rozszerzenia PEX dla X serwera.
 %package -n XFree86-fonts-PEX
 Summary:	PEX fonts
 Summary(pl):	Fonty PEX
-Group:		X11/XFree86
+Group:		X11
 
 %description -n XFree86-fonts-PEX
 PEX fonts for PEX extension.
