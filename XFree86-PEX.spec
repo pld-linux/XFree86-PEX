@@ -1,5 +1,5 @@
 Summary:	PEX extension library
-Summary(pl):	Biblioteka rozszerzenia PEX
+Summary(pl.UTF-8):   Biblioteka rozszerzenia PEX
 Name:		XFree86-PEX
 Version:	4.3.0
 Release:	1
@@ -26,12 +26,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 PEX extension library.
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka rozszerzenia PEX.
 
 %package devel
 Summary:	PEX extension headers
-Summary(pl):	Pliki nag≥Ûwkowe rozszerzenia PEX
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe rozszerzenia PEX
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	XFree86-devel >= 4.3.0
@@ -39,53 +39,53 @@ Requires:	XFree86-devel >= 4.3.0
 %description devel
 PEX extension headers.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe rozszerzenia PEX.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe rozszerzenia PEX.
 
 %package static
 Summary:	PEX extension static library
-Summary(pl):	Statyczna biblioteka rozszerzenia PEX
+Summary(pl.UTF-8):   Statyczna biblioteka rozszerzenia PEX
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 PEX extension static library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka rozszerzenia PEX.
 
 %package doc
 Summary:	PEX extension documentation
-Summary(pl):	Dokumentacja do rozszerzenia PEX
+Summary(pl.UTF-8):   Dokumentacja do rozszerzenia PEX
 Group:		X11
 
 %description doc
 PEX extension documentation.
 
-%description doc -l pl
+%description doc -l pl.UTF-8
 Dokumentacja do rozszerzenia PEX.
 
 %package -n XFree86-module-PEX
 Summary:	PEX extension module
-Summary(pl):	Modu≥ rozszerzenia PEX
+Summary(pl.UTF-8):   Modu≈Ç rozszerzenia PEX
 Group:		X11
 %{requires_eq_to XFree86-modules XFree86-Xserver-devel}
 
 %description -n XFree86-module-PEX
 PEX extension module for X server.
 
-%description -n XFree86-module-PEX -l pl
-Modu≥ rozszerzenia PEX dla X serwera.
+%description -n XFree86-module-PEX -l pl.UTF-8
+Modu≈Ç rozszerzenia PEX dla X serwera.
 
 %package -n XFree86-fonts-PEX
 Summary:	PEX fonts
-Summary(pl):	Fonty PEX
+Summary(pl.UTF-8):   Fonty PEX
 Group:		X11
 
 %description -n XFree86-fonts-PEX
 PEX fonts for PEX extension.
 
-%description -n XFree86-fonts-PEX -l pl
+%description -n XFree86-fonts-PEX -l pl.UTF-8
 Fonty PEX do rozszerzenia PEX.
 
 %prep
